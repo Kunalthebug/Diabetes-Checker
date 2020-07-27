@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+<div class="content" align="center">
+        <h1 style="text-align: center">Diabetes Checker</h1>
+            <div><img src="https://www.kindpng.com/picc/m/111-1115624_transparent-doctor-cartoon-hd-png-download.png" alt="" width="200" height="200"></div>
+        <div class="form" >
+            <form action="/predict" method="POST">
+                <input type="number" name="Pregnancies" id="Pregnancies" placeholder="Pregnancies"><br>
+                <input type="number" name="Glucose" id="Glucose" placeholder="Glucose"><br>
+                <input type="number" name="BloodPressure" id="BloodPressure" placeholder="BloodPressure"><br>
+                <input type="number" name="SkinThickness" id="SkinThickness" placeholder="SkinThickness"><br>
+                <input type="number" name="Insulin" id="Insulin" placeholder="Insulin"><br>
+                <input type="number" name="BMI" id="BMI"placeholder="BMI" step="0.1"><br>
+                <input type="number" name="DiabetesPedigreeFunction" id="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" step="0.1"><br>
+                <input type="number" name="Age" id="Age"placeholder="Age"><br>
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+</div>
+</body>
+</html>
